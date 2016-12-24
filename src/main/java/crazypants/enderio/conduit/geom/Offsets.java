@@ -11,6 +11,7 @@ import crazypants.enderio.conduit.me.IMEConduit;
 import crazypants.enderio.conduit.oc.IOCConduit;
 import crazypants.enderio.conduit.power.IPowerConduit;
 import crazypants.enderio.conduit.redstone.IRedstoneConduit;
+import crazypants.enderio.conduit.rs.IRSConduit;
 import net.minecraft.util.EnumFacing;
 
 public class Offsets {
@@ -97,6 +98,12 @@ public class Offsets {
     OFFSETS.put(key(IOCConduit.class, Axis.Y), Offset.SOUTH_WEST);
     OFFSETS.put(key(IOCConduit.class, Axis.Z), Offset.WEST_DOWN);
 
+    OFFSETS.put(key(IRSConduit.class, Axis.NONE), Offset.SOUTH_DOWN);
+    OFFSETS.put(key(IRSConduit.class, Axis.X), Offset.SOUTH_DOWN);
+    OFFSETS.put(key(IRSConduit.class, Axis.Y), Offset.SOUTH_EAST);
+    OFFSETS.put(key(IRSConduit.class, Axis.Z), Offset.EAST_DOWN);
+
+    // TODO: Change this example to something not already in use
     // OFFSETS.put(key(IxConduit.class, Axis.NONE), Offset.SOUTH_DOWN);
     // OFFSETS.put(key(IxConduit.class, Axis.X), Offset.SOUTH_DOWN);
     // OFFSETS.put(key(IxConduit.class, Axis.Y), Offset.SOUTH_EAST);

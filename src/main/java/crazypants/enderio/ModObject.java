@@ -33,6 +33,7 @@ import crazypants.enderio.conduit.me.ItemMEConduit;
 import crazypants.enderio.conduit.oc.ItemOCConduit;
 import crazypants.enderio.conduit.power.ItemPowerConduit;
 import crazypants.enderio.conduit.redstone.ItemRedstoneConduit;
+import crazypants.enderio.conduit.rs.ItemRSConduit;
 import crazypants.enderio.enderface.BlockEnderIO;
 import crazypants.enderio.enderface.ItemEnderface;
 import crazypants.enderio.item.ItemConduitProbe;
@@ -130,6 +131,7 @@ public enum ModObject implements IModObject {
   itemItemConduit(ItemItemConduit.class),
   itemGasConduit,
   itemMEConduit(ItemMEConduit.class),
+  itemRSConduit(ItemRSConduit.class),
   itemOCConduit(ItemOCConduit.class),
   itemBasicFilterUpgrade(ItemBasicItemFilter.class),
   itemExistingItemFilter(ItemExistingItemFilter.class),

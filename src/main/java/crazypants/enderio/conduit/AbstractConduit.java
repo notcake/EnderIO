@@ -32,6 +32,8 @@ import crazypants.enderio.conduit.power.PowerConduitNetwork;
 import crazypants.enderio.conduit.redstone.IRedstoneConduit;
 import crazypants.enderio.conduit.redstone.RedstoneConduitNetwork;
 import crazypants.enderio.conduit.render.BlockStateWrapperConduitBundle;
+import crazypants.enderio.conduit.rs.IRSConduit;
+import crazypants.enderio.conduit.rs.RSConduitNetwork;
 import crazypants.enderio.render.IBlockStateWrapper;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -624,6 +626,8 @@ public abstract class AbstractConduit implements IConduit {
 //      return new GasConduitNetwork();
     } else if (IMEConduit.class.isAssignableFrom(type)) {
       return new MEConduitNetwork();
+    } else if (IRSConduit.class.isAssignableFrom(type)) {
+      return new RSConduitNetwork();
     } else if (IOCConduit.class.isAssignableFrom(type)) {
       return new OCConduitNetwork();
     } else {
