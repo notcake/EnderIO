@@ -663,6 +663,17 @@ XML editor will display that as tooltips when editing this file.
     </crafting>
   </recipe>
 
+  <recipe name="Conduit, RS" required="true">
+    <config name="enableRSConduits" section="Item Enabling" value="true"/>
+    <dependency item="enderio:itemRSConduit:0" />
+    <crafting>
+      <grid size="2x1">
+        <item name="refinedstorage:cable" /><item name="CONDUIT_BINDER" />
+      </grid>
+      <output name="RS_CONDUIT" />
+    </crafting>
+  </recipe>
+
   <recipe name="Conduit, ME (pure)" required="true">
     <config name="enableMEConduits" section="Item Enabling" value="true"/>
     <dependency item="enderio:itemMEConduit:0" />
